@@ -74,7 +74,7 @@ In this step, a new user account for Jane Doe is created in Active Directory, an
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this step, you log into Client-1 and join it to the mydomain.com domain by configuring its system settings to communicate with the domain controller. This action allows Client-1 to become part of the domain, enabling it to use domain-based authentication, access network resources, and receive domain policies. By joining the domain, Client-1 can be centrally managed through Active Directory, allowing for easier administration and user access control within the network.
+In this step, I logged into Client-1 and join it to the mydomain.com domain by configuring its system settings to communicate with the domain controller. This action allows Client-1 to become part of the domain, enabling it to use domain-based authentication, access network resources, and receive domain policies. By joining the domain, Client-1 can be centrally managed through Active Directory, allowing for easier administration and user access control within the network.
 </p>
 <br />
 
@@ -83,7 +83,7 @@ In this step, you log into Client-1 and join it to the mydomain.com domain by co
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this step, you log into DC-1, the domain controller, and confirm that Client-1 has been successfully joined to the mydomain.com domain by checking its status in Active Directory. After verification, Client-1 is moved into the CLIENTS organizational unit (OU), which helps organize and manage the client machine within the domain. Placing Client-1 in the CLIENTS OU ensures that it can inherit specific group policies and permissions designed for client devices, making it easier to manage access and apply configurations for that particular group.
+In this step, I logged into DC-1, the domain controller, and confirm that Client-1 has been successfully joined to the mydomain.com domain by checking its status in Active Directory. After verification, Client-1 is moved into the CLIENTS organizational unit (OU), which helps organize and manage the client machine within the domain. Placing Client-1 in the CLIENTS OU ensures that it can inherit specific group policies and permissions designed for client devices, making it easier to manage access and apply configurations for that particular group.
 </p>
 <br />
 
