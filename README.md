@@ -3,7 +3,7 @@
 </p>
 
 <h1>Active Directory Installation & Configuration in Minutes!</h1>
-This setup involves installing Active Directory Domain Services on DC-1, promoting it as a domain controller for the domain mydomain.com, creating organizational units for EMPLOYEES, ADMINS, and CLIENTS, adding a new employee to the Domain Admins group, joining Client-1 to the domain, organizing it within the CLIENTS OU, configuring access for non-administrative users, and using PowerShell to create additional users in the EMPLOYEES OU, followed by attempting to log into Client-1 with one of these new users.<br />
+In this lab, I started by installing Active Directory Domain Services on DC-1 and promoting it to a domain controller for the domain mydomain.com. Next, I created organizational units (OUs) for EMPLOYEES, ADMINS, and CLIENTS to help organize the domain structure. I then added a new employee to the Domain Admins group to grant the appropriate permissions. Afterward, I joined Client-1 to the domain and organized it within the CLIENTS OU. I configured access for non-administrative users to ensure proper permissions. Using PowerShell, I created additional users in the EMPLOYEES OU, and finally, I attempted to log into Client-1 with one of these new user accounts to verify that the setup was functioning as expected.<br />
 
 
 <h2>Video Demonstration</h2>
@@ -47,7 +47,7 @@ https://youtu.be/37QgVYfFlTg
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-This setup involves installing Active Directory Domain Services (AD DS) on the DC-1 virtual machine and promoting it to a domain controller for the domain mydomain.com. Once promoted, DC-1 takes on the role of managing and storing the directory information for the domain, handling user authentication, authorization, and other essential services like DNS for domain-joined computers. This process also configures the domain controller to support network management, security policies, and resource access for users and computers within the mydomain.com domain.
+In this step, I installed Active Directory Domain Services (AD DS) on the DC-1 virtual machine and promoted it to a domain controller for the domain mydomain.com. Once promoted, DC-1 took on the responsibility of managing and storing the directory information for the domain. It now handles user authentication, authorization, and essential services like DNS for domain-joined computers. This process also configured the domain controller to support network management, security policies, and resource access for users and computers within the mydomain.com domain.
 </p>
 <br />
 
@@ -56,7 +56,7 @@ This setup involves installing Active Directory Domain Services (AD DS) on the D
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this step, Organizational Units (OUs) named EMPLOYEES, ADMINS, and CLIENTS are created within Active Directory to logically organize and manage different groups of users and resources based on their roles or functions within the domain. EMPLOYEES could include regular staff members, ADMINS would contain administrative accounts with higher privileges, and CLIENTS might include machines or users that require different access levels or management. Organizing resources into OUs helps simplify administration, apply specific group policies, and delegate management tasks based on the role of each group.
+In this step, I created Organizational Units (OUs) within Active Directory, naming them EMPLOYEES, ADMINS, and CLIENTS. These OUs help logically organize and manage different groups of users and resources based on their roles or functions within the domain. For example, the EMPLOYEES OU includes regular staff members, the ADMINS OU contains administrative accounts with higher privileges, and the CLIENTS OU holds machines or users that need different access levels or management. Organizing resources into OUs simplifies administration, allows for the application of specific group policies, and makes it easier to delegate management tasks based on the role of each group.
 </p>
 <br />
 
@@ -65,7 +65,7 @@ In this step, Organizational Units (OUs) named EMPLOYEES, ADMINS, and CLIENTS ar
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this step, a new user account for Jane Doe is created in Active Directory, and she is assigned to the Domain Admins Security Group. By adding her to this group, Jane Doe is granted full administrative privileges over the domain, allowing her to manage domain settings, users, and other resources across the network. This step ensures that she has the necessary permissions to perform high-level administrative tasks within the domain, such as managing user accounts, group policies, and server configurations.
+In this step, I created a new user account for Jane Doe in Active Directory and added her to the Domain Admins Security Group. By assigning her to this group, I granted her full administrative privileges over the domain, allowing her to manage domain settings, users, and other resources across the network. This ensures that Jane has the necessary permissions to perform high-level administrative tasks within the domain, such as managing user accounts, group policies, and server configurations.
 </p>
 <br />
 
@@ -74,7 +74,7 @@ In this step, a new user account for Jane Doe is created in Active Directory, an
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this step, I logged into Client-1 and join it to the mydomain.com domain by configuring its system settings to communicate with the domain controller. This action allows Client-1 to become part of the domain, enabling it to use domain-based authentication, access network resources, and receive domain policies. By joining the domain, Client-1 can be centrally managed through Active Directory, allowing for easier administration and user access control within the network.
+In this step, I logged into Client-1 and joined it to the mydomain.com domain by configuring its system settings to communicate with the domain controller. This action allowed Client-1 to become part of the domain, enabling it to use domain-based authentication, access network resources, and receive domain policies. By joining the domain, Client-1 can now be centrally managed through Active Directory, making administration and user access control within the network much easier.
 </p>
 <br />
 
@@ -83,7 +83,7 @@ In this step, I logged into Client-1 and join it to the mydomain.com domain by c
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this step, I logged into DC-1, the domain controller, and confirm that Client-1 has been successfully joined to the mydomain.com domain by checking its status in Active Directory. After verification, Client-1 is moved into the CLIENTS organizational unit (OU), which helps organize and manage the client machine within the domain. Placing Client-1 in the CLIENTS OU ensures that it can inherit specific group policies and permissions designed for client devices, making it easier to manage access and apply configurations for that particular group.
+In this step, I logged into DC-1, the domain controller, and confirmed that Client-1 had been successfully joined to the mydomain.com domain by checking its status in Active Directory. After verifying its domain membership, I moved Client-1 into the CLIENTS organizational unit (OU), which helps organize and manage the client machine within the domain. Placing Client-1 in the CLIENTS OU ensures that it can inherit specific group policies and permissions designed for client devices, making it easier to manage access and apply configurations for that group.
 </p>
 <br />
 
@@ -92,7 +92,7 @@ In this step, I logged into DC-1, the domain controller, and confirm that Client
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this step, Client-1 is configured to allow access for non-administrative users by modifying the machine's permissions, group memberships, and local user settings. This typically involves ensuring that users who are not part of the Administrators group can still log in and access necessary resources while restricting access to sensitive administrative functions. By configuring these settings, Client-1 ensures that non-administrative users have the necessary rights to perform their tasks, such as running applications or accessing shared network resources, without granting them full administrative control over the system.
+In this step, I configured Client-1 to allow access for non-administrative users by modifying the machine's permissions, group memberships, and local user settings. This involved ensuring that users who are not part of the Administrators group could still log in and access the necessary resources while restricting access to sensitive administrative functions. By configuring these settings, I made sure that non-administrative users had the rights they needed to perform their tasks, such as running applications or accessing shared network resources, without granting them full administrative control over the system.
 </p>
 <br />
 
@@ -101,6 +101,6 @@ In this step, Client-1 is configured to allow access for non-administrative user
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this step, additional user accounts are created within the EMPLOYEES organizational unit using a PowerShell script, which automates the process of adding multiple users at once. After the users are created, one of them is selected to log into Client-1 to test the user’s ability to authenticate and access the machine. This step verifies that the new users can successfully log in to domain-joined devices and that their access rights and group memberships are correctly configured. It also ensures that the PowerShell script correctly applied the necessary attributes for the users in the EMPLOYEES OU
+In this step, I used a PowerShell script to create additional user accounts within the EMPLOYEES organizational unit, automating the process of adding multiple users at once. After the users were created, I selected one of them to log into Client-1 and tested the user’s ability to authenticate and access the machine. This step helped verify that the new users could successfully log in to domain-joined devices and that their access rights and group memberships were correctly configured. It also ensured that the PowerShell script had correctly applied the necessary attributes for the users in the EMPLOYEES OU.
 </p>
 <br />
